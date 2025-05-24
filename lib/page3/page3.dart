@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_architecture_playground/page3/view_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_architecture_playground/page1/view_model.dart';
 
 class Page3 extends ConsumerWidget {
   const Page3({super.key});
