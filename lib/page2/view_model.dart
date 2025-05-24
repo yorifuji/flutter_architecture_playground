@@ -10,7 +10,11 @@ class ViewModel extends _$ViewModel {
     return ref.watch(dummyRepositoryProvider).fetchData();
   }
 
-  Future<void> refreshData() async {
+  Future<void> refreshViewModel() async {
     ref.invalidateSelf();
+  }
+
+  Future<void> refreshProvider() async {
+    ref.invalidate(dummyRepositoryProvider);
   }
 }

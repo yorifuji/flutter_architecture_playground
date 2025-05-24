@@ -5,7 +5,7 @@ part 'dummy_repository.g.dart';
 
 class DummyRepository {
   Future<Map<String, dynamic>> fetchData() async {
-    await Future.delayed(const Duration(seconds: 2)); // 2秒のディレイ
+    await Future.delayed(const Duration(seconds: 1));
     return {
       'timestamp': DateTime.now().toIso8601String(),
       'message': 'Hello from DummyRepository!',

@@ -11,8 +11,7 @@ class ViewModel extends _$ViewModel {
   }
 
   Future<void> refreshData() async {
-    state = await AsyncValue.guard(
-      () => ref.watch(dummyRepositoryProvider).fetchData(),
-    );
+    final data = await ref.read(dummyRepositoryProvider).fetchData();
+    state = AsyncData(data);
   }
 }

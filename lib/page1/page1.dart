@@ -30,7 +30,7 @@ class Page1 extends ConsumerWidget {
                     onPressed:
                         () =>
                             ref.read(viewModelProvider.notifier).refreshData(),
-                    child: const Text('Refresh Data'),
+                    child: const Text('fetch data'),
                   ),
                 ],
               ),
