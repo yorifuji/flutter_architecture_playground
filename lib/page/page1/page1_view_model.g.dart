@@ -1,27 +1,26 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'dummy_repository.dart';
+part of 'page1_view_model.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$dummyRepositoryHash() => r'f39f74bac732393e101636c53a3d0fd1ce203fb6';
+String _$page1ViewModelHash() => r'232c0c343e00e914591b071df84bcd28fc61edc7';
 
-/// See also [dummyRepository].
-@ProviderFor(dummyRepository)
-final dummyRepositoryProvider = AutoDisposeProvider<DummyRepository>.internal(
-  dummyRepository,
-  name: r'dummyRepositoryProvider',
+/// See also [Page1ViewModel].
+@ProviderFor(Page1ViewModel)
+final page1ViewModelProvider =
+    AutoDisposeAsyncNotifierProvider<Page1ViewModel, Page1State>.internal(
+  Page1ViewModel.new,
+  name: r'page1ViewModelProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$dummyRepositoryHash,
+      : _$page1ViewModelHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-@Deprecated('Will be removed in 3.0. Use Ref instead')
-// ignore: unused_element
-typedef DummyRepositoryRef = AutoDisposeProviderRef<DummyRepository>;
+typedef _$Page1ViewModel = AutoDisposeAsyncNotifier<Page1State>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

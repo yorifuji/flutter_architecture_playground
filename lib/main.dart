@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture_playground/page1/page1.dart';
-import 'package:flutter_architecture_playground/page2/page2.dart';
+import 'package:flutter_architecture_playground/page/page1/page1.dart';
+import 'package:flutter_architecture_playground/page/todos/todos_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
@@ -48,12 +48,21 @@ class HomePage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(
-                  context,
-                ).push(MaterialPageRoute(builder: (context) => const Page2()));
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => const TodosPage()),
+                );
               },
-              child: const Text('Go to Page 2'),
+              child: const Text('Go to Todos Page'),
             ),
+
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Navigator.of(
+            //       context,
+            //     ).push(MaterialPageRoute(builder: (context) => const Page2()));
+            //   },
+            //   child: const Text('Go to Page 2'),
+            // ),
           ],
         ),
       ),
